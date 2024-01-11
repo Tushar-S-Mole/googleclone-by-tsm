@@ -1,0 +1,232 @@
+<script>
+    var x=true;
+</script>
+<html>
+    
+<head>
+   
+    <title> Google Page </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /* body {
+            padding: 25px;
+            background-color: white;
+            color: black;
+            font-size: 25px;
+        } */
+
+        .dark-mode {
+            background-color: rgb(61, 61, 61);
+            color: blanchedalmond;
+        }
+
+        #custom-dropdown {
+            display: none;
+            position: absolute;
+
+        }
+
+        #custom-dropdown.visible {
+            display: block;
+        }
+    </style>
+</head>
+
+<body bgcolor="white" vlink="red">
+    <script>
+       
+        alert("Recommended to Use Chrome\nFunctionality is Similar To Google Home Page"); 
+
+    </script>
+    
+    <header>
+        <nav>
+            <ul>
+                <button onclick="myFunction()">Toggle dark mode</button>
+                <!-- <button onlick="darkMode()">Dark Mode</button>
+                <button onclick="lightMode()">Light Mode</button> -->
+            </ul>
+            <ul>
+                <li> <a class="samll-text" href="https://support.google.com/mail/answer/56256?hl=en">
+                        <p>Gamil</p>
+                    </a></li>
+                <li> <a class="samll-text" href="second_page.html">
+                        <p>Images</p>
+                    </a></li>
+                <li class="menu-bg">
+                    <div class="dropdown" title="Menu Click Me!">
+
+                        <div class="dropbtn"><img class="menu-button" src="menu_image.png" alt="menu-button"
+                                height="20px" width="20px"></div>
+
+
+                        <div class="dropdown-content">
+                            <table bgcolor="blanchedalmond">
+                                <tr>
+                                    <td><a href="https://news.google.com/home?hl=en-IN&gl=IN&ceid=IN:en"><img
+                                                src="Google_news_logo.png" height="80px" width="80px"
+                                                title="Google News"></a></td>
+                                    <td><a href="https://play.google.com/store/games?hl=en_IN&gl=US&pli=1"><img
+                                                src="Google-Play-Logo.png" height="70px" width="80px"
+                                                title="Google Play"></a></td>
+                                    <td><a href="https://www.google.com/"><img src="google-icon.png" height="60px"
+                                                width="60px" title="Google"></a></td>
+
+
+                                </tr>
+                                <tr>
+                                    <td><a href="https://www.google.com/intl/en_in/chrome/"><img src="ch go.png"
+                                                height="70px" width="80px" title="Chrome"></a></td>
+                                    <td><a href="https://meet.google.com/"><img src="go meet.png" height="70px"
+                                                width="70px" title="Google Meet"></a></td>
+                                    <td><a href="https://shopping.google.com/?pli=1"><img src="shp go.png" height="60px"
+                                                width="60px" title="Google Shopping"></a></td>
+
+                                </tr>
+                                <tr>
+                                    <td><a href="https://www.google.com/maps/"><img src="map go.png" height="70px"
+                                                width="70px" title="Google Map"></a></td>
+                                    <td><a href="https://translate.google.co.in/"><img src="Translate_google.png"
+                                                height="60px" width="60px" title="Google Translate"></a></td>
+                                    <td><a href="https://www.youtube.com/" title="You Tube"><img src="yt.png"
+                                                height="60px" width="60px"></a></td>
+
+                                </tr>
+                                <tr>
+                                    <td><a
+                                            href="https://earth.google.com/web/@0,-4.105,0a,22251752.77375655d,35y,0h,0t,0r/data=OgMKATA"><img
+                                                src="Google_Earth_Icon.png" height="60px" width="60px"
+                                                style="margin-left: 8px;"></a>
+                                        <pre style="color: gray;"> Google Earth</pre>
+                                    </td>
+                                </tr>
+                            </table>
+
+
+
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="Purple_Circle.png" height="40px" width="40px" class="x1" >
+                    <h1 class="x2" style="color:whitesmoke ;font-size: 20px;  #circle {background: rgb(159, 0, 0);width: 200px;height: 200px;
+                    }">
+
+                        <script>
+                            if(x==true){
+                            let c=prompt("What is Your Name");
+                            var x=c.toUpperCase();
+                            if(x==undefined) {
+
+                                document.write(x[0]);
+                            }
+                                else{
+
+                                    document.write("T");
+                                }
+                            x=false;
+                            }
+                        </script>
+                    </h1>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="search-wrapper">
+        <img class="logo" src="i3.png" alt="logo" height="92" width="272">
+        <form>
+            <a href="https://www.google.com/"><img class="search" src="Google_mic.png" height="20px" width="20px" title="Search By Voice"></a>
+            <img class="mic" src="i10.webp" height="20px" width="20px">
+            <a href="https://lens.google/" title="Search By Image">
+                <div><img class="cam" src="camera.webp" style="height: 20px; width: 20px;"></div>
+            </a>
+
+            <input type="text" id="searchInput" placeholder="Search on Google" onkeydown="checkEnterKey(event)"
+                title="Search Here" style="background-color:rgb(224, 225, 227)">
+            <div class="buttons">
+
+                <button type="button" style="margin-top:28px;margin-left: 2px;padding: 0px 16px ;"
+                    onclick="performGoogleSearch()">
+                    <pre> Google Search </pre>
+                </button>
+                <button type="button" style="margin-top: -45px;margin-left: 190px;padding: 1px 10px ;">
+                    <pre><a href="https://doodles.google/" style="text-decoration: none; "><p style=" color:rgb(88, 86, 86)">I'am Feeling Lucky</p></a></pre>
+                </button>
+            </div>
+        </form>
+    </section>
+    <footer>
+        <div class="panal">
+            <p>India</p>
+        </div>
+        <div class="panal">
+            <ul>
+                <li> <a
+                        href="https://about.google/?utm_source=google-IN&utm_medium=referral&utm_campaign=hp-footer&fg=1">
+                        <p>About</p>
+                    </a>
+                </li>
+                <li> <a
+                        href="https://ads.google.com/intl/en_in/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">
+                        <p>Advertising</p>
+                    </a>
+                </li>
+                <li> <a href="https://www.google.com/intl/en_in/business/">
+                        <p>Buisness</p>
+                    </a></li>
+                <li> <a href="https://www.google.com/search/howsearchworks/?fg=1">
+                        <p>How Search Works</p>
+                    </a></li>
+            </ul>
+
+            <!-- <div class="carbon">
+             <img class="leaf" src="https://img.freepik.com/free-photo/purple-osteospermum-daisy-flower_1373-16.jpg width="100px" height="100px" alt="leaf">
+             <a href=#>Carbon neutral Since 2007</a>
+        </div> -->
+            <ul class="right">
+                <li> <a href="https://policies.google.com/privacy?hl=en-IN&fg=1">
+                        <p>Privacy</p>
+                    </a></li>
+                <li> <a href="https://policies.google.com/terms?hl=en-IN&fg=1">
+                        <p>Terms</p>
+                    </a></li>
+                <li> <a href="https://support.google.com/android/answer/3118621?hl=en-GB">
+                        <p>Setting</p>
+                    </a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+
+    </script>
+    <script>
+        function performGoogleSearch() {
+            // Get the search query from your input
+            var searchQuery = document.getElementById("searchInput").value;
+
+            // Construct the Google search URL
+            var googleSearchUrl = "https://www.google.com/search?q=" + encodeURIComponent(searchQuery);
+
+            // Open a new tab or window with the Google search URL
+            window.open(googleSearchUrl, "_blank");
+        }
+
+        function checkEnterKey(event) {
+            // Check if the pressed key is Enter
+            if (event.key === "Enter") {
+                // If Enter is pressed, perform the Google search
+                performGoogleSearch();
+            }
+        }
+    </script>
+
+</body>
+
+</html>
